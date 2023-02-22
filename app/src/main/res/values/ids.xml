@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id" type="id"/>
+    <item name="nom" type="id"/>
+    <item name="taille" type="id"/>
+    <item name="age" type="id"/>
+    <item name="poids" type="id"/>
+    <item name="ville" type="id"/>
+    <item name="vaccine1" type="id"/>
+    <item name="dateVacc1" type="id"/>
+    <item name="vaccine2" type="id"/>
+    <item name="dateVacc2" type="id"/>
+    <item name="genre" type="id"/>
+    <item name="Mr" type="id"/>
+    <item name="Mme" type="id"/>
+    <item name="Mle" type="id"/>
+    <item name="adresse" type="id"/>
+    <item name="add" type="id"/>
+    <item name="update" type="id"/>
+    <item name="remove" type="id"/>
+    <item name="clear" type="id"/>
+    <item name="listAll" type="id"/>
+    <item name="search" type="id"/>
+    <item name="first" type="id"/>
+    <item name="prev" type="id"/>
+    <item name="next" type="id"/>
+    <item name="last" type="id"/>
+    <item name="listView" type="id"/>
+</resources>

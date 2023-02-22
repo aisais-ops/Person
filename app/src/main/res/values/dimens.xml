@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size">20sp</dimen>
+	<dimen name="width">20dp</dimen>
+	<dimen name="pt">20pt</dimen>
+	<dimen name="px">20px</dimen>
+	<dimen name="mm">20mm</dimen>
+	<dimen name="in">20in</dimen>
+</resources>

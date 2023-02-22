@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--android:background="@drawable/back"-->
+
+        <TextView android:text="Gestion du Personnel"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lime"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/font_size"
+            android:textStyle="bold|italic"/>
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <EditText android:id="@id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="id"
+            android:enabled="true"
+            android:inputType="number"/>
+        <EditText android:id="@id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:inputType="textPersonName"/>
+        <EditText android:id="@id/taille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Taille"
+            android:inputType="numberDecimal"/>
+        <NumberPicker android:id="@id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <SeekBar android:id="@id/poids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="40"
+            android:max="90"
+            android:progress="55"
+            />
+        <Spinner android:id="@id/ville"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/ville_prompt"
+            android:entries="@array/ville_array"/>
+        <CheckBox android:id="@id/vaccine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vacciné" android:checked="true"
+            />
+        <EditText android:id="@id/dateVacc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date vaccin 1"
+            android:inputType="date"/>
+
+        <Switch android:id="@id/vaccine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="No" android:textOn="Yes" /><!-- android:visibility="invisible visible gone"-->
+
+        <DatePicker android:id="@id/dateVacc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+
+        <RadioGroup android:id="@id/genre"   android:orientation="horizontal"
+            android:layout_width="match_parent"  android:layout_height="wrap_content">
+            <RadioButton android:id="@id/Mr"  android:text="Mr" android:checked="true"
+                android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+            <RadioButton android:id="@id/Mme" android:text="Mme"
+                android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+            <RadioButton android:id="@id/Mle" android:text="Mle"
+                android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <EditText android:id="@id/adresse"     android:hint="adresse"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="textMultiLine"   android:lines="2"
+            android:gravity="top|left" android:minLines="2"  android:maxLines="4"/>
+
+        <GridLayout  android:columnCount="3"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:onClick="addOrUpdate" android:text="ajouter" android:id="@id/add"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Button android:onClick="addOrUpdate" android:text="modifier" android:id="@id/update"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Button android:onClick="remove"      android:text="supprimer" android:id="@id/remove"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageButton android:onClick="clear"  android:src="@drawable/clear" android:id="@id/clear"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Button android:onClick="listAll"     android:text="lister" android:id="@id/listAll"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Button android:onClick="searchByNom" android:text="rechercher" android:id="@id/search"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </GridLayout>
+
+        <LinearLayout android:gravity="center"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/first" android:onClick="naviguer" android:text="first"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Button android:id="@id/prev" android:onClick="naviguer" android:text="prev"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Button android:id="@id/next" android:onClick="naviguer" android:text="next"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Button android:id="@id/last" android:onClick="naviguer" android:text="last"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="#ffffff"
+            android:layout_width= "match_parent"     android:layout_height="10dp"/>
+        <ListView android:id="@id/listView"
+            android:layout_width="match_parent"  android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>
+    <!-- android:inputType="text" "textMultiLine" "textPersonName" "textUri" "textEmailAddress"
+    "textPostalAddress" "phone" "number" "numberDecimal" "numberSigned" "textPassword" "numberPassword"
+     "date" "time" "datetime" -->

@@ -1,0 +1,8 @@
+<resources>
+    <integer name="min_age">16</integer>
+    <integer name="max_age">30</integer>
+    <integer name="normal_age">18</integer>
+    <integer name="min_poids">40</integer>
+    <integer name="max_poids">90</integer>
+    <integer name="normal_poids">90</integer>
+</resources>

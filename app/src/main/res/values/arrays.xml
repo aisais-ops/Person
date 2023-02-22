@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ville_array">
+        <item>Fes</item>
+        <item>Rabat</item>
+        <item>Casa</item>
+    </string-array>
+	<integer-array name="bits">
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+        <item>32</item>
+    </integer-array>
+	<array name="icons">
+        <item>@drawable/home</item>
+        <item>@drawable/settings</item>
+        <item>@drawable/logout</item>
+    </array>
+    <array name="colors">
+        <item>#FFFF0000</item>
+        <item>#FF00FF00</item>
+        <item>#FF0000FF</item>
+    </array>
+</resources>

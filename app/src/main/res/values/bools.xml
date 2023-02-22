@@ -1,0 +1,4 @@
+<resources>
+    <bool name="enable">true</bool>
+    <bool name="disable">false</bool>
+</resources>

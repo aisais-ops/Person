@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RectangleViewAttrs">
+        <attr name="rectangle_background" format="color" />
+        <attr name="circle_background" format="color" />
+        <attr name="radius_dimen" format="dimension" />
+		<attr name="showText" format="boolean" />
+       <attr name="labelPosition" format="enum">
+           <enum name="left" value="0"/>
+           <enum name="right" value="1"/>
+       </attr>
+    </declare-styleable>
+</resources>
