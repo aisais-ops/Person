@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Gestion personnel TEST</string>
-    <string name="ville_prompt">Choisir une ville</string>
+    <string name="ville_prompt">Choisir une Aville</string>
     <string name="format_date">dd/MM/yyyy</string>
     <string name="min_datevaccin1">01/07/2023</string>
 </resources>
